@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio dos paises</title>
+    <style>
+        body{
+            font: normal 17pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Qual é o seu Pais de origem: <input type="text" id="pais"> 
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="result"></div>
+    <script>
+        function clicar(){
+            var pais = document.getElementById('pais')
+            result.innerHTML += (`Vivendo em ${pais.value} `)   //Não ESQUECER O .VALUE PQ SENÃO NÃO ANALISA
+             if (pais.value != 'Brasil'){
+                result.innerHTML +=`Você é Extrangeiro`
+             } else{
+                result.innerHTML +=`Você é Brasileiro krai`
+             }
+        }
+       
+
+    </script>
+</body>
+</html>

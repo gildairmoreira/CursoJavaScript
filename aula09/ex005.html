@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique Em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        /*window.document.write('Está escrito assim: ' + p1.innerText)
+        var d = window.document.getElementById('msg')  //So muda a tag/name/id/class no get element mais se tiver no plural colocar colchetes
+        d.style.background = 'black'
+        d.innerText = 'Estou aguardando...'*/
+
+    </script>
+</body>
+</html>
